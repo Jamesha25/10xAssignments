@@ -5,3 +5,29 @@
 width: 100%;
 height: 100%;
 }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.page{
+    border: solid 2px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: 23px;
+}
+.page > div{
+    border: solid 2px blue; 
+    width: 50%;
+    height: 100vh;
+}
+.page div ul li ul {
+    padding-left: 20px;
+}
+.right-content{
+    padding: 100px;
+}
+.left-content{
+    padding:400px 150px
+}
