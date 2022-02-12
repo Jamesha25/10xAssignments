@@ -6,21 +6,86 @@
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
 	<script src="bundle.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
 </head>
 
 <body>
 	<div id="container">
 
 	<!-- Start your code from here -->
-	
+	<section class="homepage">
+		<nav>
+			<img src="./images/logo.png" width="80px" height="80px" class="logo">
+			<ul>
+				<li>Home</li>
+				<li>Things</li>
+				<li>Stuffs</li>
+			</ul>
+		</nav>
+		<div class="homeBody">
+			<h1>A Site About Some Dogs</h1>
+			<img src="./images/dog4.jpg" width="400px" height="400px">
+			<div class="dog-btns">What are dogs</div>
+		</div>
+	</section>
+	<section class="finalPage">
+		<article id="dog-box"></article>
+		<footer>
+			<h1>Learn About Dogs Online</h1>
+			<div class="icons">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-facebook-square"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+			<h1><a href="'#">See this on Github</a></h1>
+		</footer>
+	</section>
 
 	<!-- End your code -->
 
 	</div>
 
-	<script type="text/javascript">
+<script type="text/javascript">
+	const dogBox = document.getElementById('dog-box');
+	let dogDetails=[
+		{
+			heading:"Home",
+			image:"./images/dog3.jpg",
+			content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia magni doloremque sint, libero illum Eos, tenetur. Est, ut libero et dolore eligendi assumenda ipsa obcaecati, velit error praesentium eveniet",
+			btn:"Go Home"
+		},
+		{
+			heading:"Things",
+			image:"./images/dog2.jpg",
+			content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia magni doloremque sint, libero illum Eos, tenetur. Est, ut libero et dolore eligendi assumenda ipsa obcaecati, velit error praesentium eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, qui? Error animi, sint doloremque eum, illum voluptatibus consequuntur, corporis placeat in vero labore ut quod ea hic pariatur quisquam aspernatur.",
+			btn:"More Things"
+		},
+		{
+			heading:"Stuffs",
+			image:"./images/dog1.jpg",
+			content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia magni doloremque sint, libero illum Eos, tenetur. Est, ut libero et dolore eligendi assumenda ipsa obcaecati, velit error praesentium eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, qui? Error animi, sint doloremque eum, illum voluptatibus consequuntur",
+			btn:"Some Stuff"
+		}
+	];
+	const displayDogBox = (dogsArray) => {
+    const htmlString = dogsArray
+        .map((item) => {
+            return `
+            <div>
+				<h2>${item.heading}</h2>
+				<img src=${item.image} width="200px" height="200px">
+				<p>${item.content}</p>
+				<div class="dog-btns">${item.btn}</div>
+			</div>
+        `;
+        })
+        .join('');
+	dogBox.innerHTML = htmlString;
+};
+displayDogBox(dogDetails);
 
-	</script>
+</script>
 
 </body>
 <script>
