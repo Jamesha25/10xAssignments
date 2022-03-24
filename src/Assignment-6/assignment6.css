@@ -1,0 +1,98 @@
+  /* Our CSS file. */
+
+
+.container, .content {
+    width: 100%;
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.thread-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thread-container .thread-box{
+    width:800px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    gap:20px;
+    background: #d1e6e9;
+}
+.thread-container .thread-box .input-area{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.thread-container .thread-box .input-area .count-section{
+    display: flex;
+    gap:30px;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.thread-container .thread-box .input-area .typing-section{
+    height: 75%;
+    border-radius: 10px;
+}
+.thread-container .thread-box .input-area .typing-section textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: blue;
+    font-size: 18px;
+}
+.thread-container .thread-box .input-area .typing-section textarea:focus{
+    outline-color: aqua;
+}
+.thread-container .thread-box .input-area .submit-btn{
+    color:white;
+    background: rgb(189, 157, 219);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor:pointer;
+}
+.thread-container .thread-box .output-area{
+    width:40%;
+    border-radius: 10px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+.thread-container .thread-box .output-area .thread-cards{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.thread-container .thread-box .output-area .thread-cards header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.thread-container .thread-box .output-area .thread-cards header .serial-number{
+    background: green;
+    color:white;
+    padding: 10px 15px 10px 8px;
+    clip-path: polygon(0% -100%, 100% 50%, 0% 200%, 0% 50%);
+}
+.thread-container .thread-box .output-area .thread-cards header i{
+    font-size: 20px;
+}
