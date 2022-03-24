@@ -5,3 +5,106 @@
 width: 100%;
 height: 100%;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    border-radius: 50%;
+    border: #50a387 solid 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #50a387;
+    width: 100%;
+    height: 10vh;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #FFFFFF;
+    padding: 0 5%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.homeBody{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.homeBody h1{
+    font-size: 4rem;
+}
+.homeBody img{
+    border: #50a387 solid 5px;
+}
+.homeBody div{
+    border:solid 2px #50a387;
+    color: #50a387;
+    width: 200px;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.finalPage article{
+    display: flex;
+    padding: 30px 5%;
+    justify-content: space-evenly;
+}
+.finalPage article>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: #50a387 2px;
+}
+.finalPage article>div h2{
+    color: #50a387;
+    padding: 10px;
+}
+.finalPage article>div p{
+    text-align: center;
+    padding: 15px 0;
+}
+.dog-btns{
+    border:solid 2px #50a387;
+    color: #50a387;
+    width: 220px;
+    background: #FFFFFF;
+    padding: 5px 15px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.finalPage footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #50a387;
+    color: #FFFFFF;
+}
+footer .icons{
+    display: flex;
+    font-size: 4rem;
+    justify-content: space-evenly;
+    width: 30%;
+}
+footer a{
+    color: #FFFFFF;
+}
